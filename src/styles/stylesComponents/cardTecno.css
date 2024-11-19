@@ -1,0 +1,148 @@
+.cardProductoTecno {
+    width: 220px;
+    height: 360px;
+    background-color: #2B3035;
+    box-shadow: 0px 0px 9px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardProductoTecno::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.cardProductoTecno:hover::before {
+    animation: rotar 4s linear infinite;
+    background-image: repeating-conic-gradient(#15c615 0%,
+            #15c615 25%,
+            transparent 25%,
+            transparent 50%);
+    opacity: 100;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.cardProductoTecno::after {
+    content: '';
+    width: 99%;
+    height: 99%;
+    background-color: #2B3035;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 3;
+}
+
+.cardProductoTecno .contenedor {
+    width: 99%;
+    height: 99%;
+    border-radius: 9px;
+    background-color: transparent;
+    z-index: 4;
+}
+
+.cardProductoTecno .contenedor img {
+    height: 67%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.cardProductoTecno .contenedor .data {
+    width: 90%;
+    font-family: 'Kulim Park';
+    color: white;
+}
+
+.cardProductoTecno .contenedor .data .Precio {
+    font-weight: 900;
+    font-size: 17px;
+    top: 6px;
+}
+
+.cardProductoTecno .contenedor .data .Nombre p:nth-child(1) {
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 13px;
+    height: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 0px !important;
+}
+
+.cardProductoTecno .contenedor .data .Nombre p:nth-child(2) {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    font-weight: 10;
+    margin: 8px 0px 0px 0px !important;
+    line-height: 10px;
+    width: 140px;
+}
+
+.cardProductoTecno .contenedor .botonAgregar {
+    border: 1px solid #116311;
+    color: #116311;
+    border-radius: 5px;
+    height: 33px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: bold;
+    box-shadow:
+        0 0 0 0px #15c615,
+        0 0 0 0px white;
+    transition: 0.5s;
+    background-color: #afafaf;
+}
+
+.cardProductoTecno .contenedor .botonAgregar i {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cardProductoTecno .contenedor .botonAgregar:hover {
+    cursor: pointer;
+    box-shadow:
+        0 0 0 2px rgb(247, 229, 229),
+        0 0 0 3px #15c615;
+    background-color: rgb(247, 229, 229);
+}
+
+
+.cardProductoTecno .contenedor .OfertaDesc {
+    background-color: red;
+    position: absolute;
+    color: #fff;
+    gap: 1px;
+    width: 90px;
+    aspect-ratio: 1;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    font-family: 'Kulim Park', sans-serif;
+}
+.cardProductoTecno .contenedor .OfertaDesc>div:nth-child(1){
+    font-size: 18px;
+    font-weight: 900;
+}
+.cardProductoTecno .contenedor .OfertaDesc>div:nth-child(2){
+    font-size: 12px;
+    position: relative;
+    top: -4px;
+}

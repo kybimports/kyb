@@ -1,0 +1,15 @@
+.PageInicioSecccion02>div:nth-child(2) img{
+    width: 250px;
+    object-fit: contain;
+    margin: 10px 0px;
+}
+.PageInicioSecccion02>div:nth-child(4) img{
+    width: 250px;
+    object-fit: contain;
+    margin: 10px 0px;
+}
+.Cardttt{
+    width: 150px;
+    height: 200px;
+    background-color: red;
+}

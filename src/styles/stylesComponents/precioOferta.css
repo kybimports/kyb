@@ -1,0 +1,86 @@
+.ContenPrecio.Oferta .EtiquetaDesc {
+    position: relative !important;
+    width: 36px !important;
+    height: 27px !important;
+    rotate: 10deg !important;
+    margin-right: 13px !important;
+    top: -1px !important;
+}
+
+.ContenPrecio.Oferta .EtiquetaDesc>svg {
+    position: absolute !important;
+    z-index: 1 !important;
+    rotate: 46deg !important;
+    top: -10px !important;
+    left: -10px !important;
+}
+
+.ContenPrecio.Oferta .EtiquetaDesc>div{
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+.ContenPrecio.Oferta .EtiquetaDesc>div:nth-child(2) {
+    position: relative !important;
+    z-index: 2 !important;
+    top: 0px !important;
+    left: -3px !important;
+}
+
+.ContenPrecio.Oferta .EtiquetaDesc>div:nth-child(2) .TotalDe{
+    z-index: 2 !important;
+    color: black !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    letter-spacing: -1.2px !important;
+    transform: scaleX(0.8) !important;
+}
+
+.ContenPrecio.Oferta .EtiquetaDesc>div:nth-child(2) .Desccc {
+    z-index: 2 !important;
+    position: relative !important;
+    top: -2px !important;
+    right: 2px !important;
+    color: black !important;
+    font-size: 7px !important;
+    font-weight: 1000 !important;
+}
+.ContenPrecio.Oferta .EtiquetaDesc>div:nth-child(3) {
+    position: absolute !important;
+    z-index: 4 !important;
+    bottom: 0px !important;
+    left: -4px !important;
+    width: 100% !important;
+    color: black !important;
+    font-size: 7px !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+.ContenPrecio.Oferta .OnlyPrecio{
+    font-weight: bolder !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    letter-spacing: -0.8px !important;
+    font-size: 22px !important;
+    position: relative !important;
+    top: 4px !important;
+}
+.ContenPrecio.Oferta .OnlyPrecio>div{
+    font-weight: 400 !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-size: 9px !important;
+    position: absolute !important;
+    letter-spacing: -0.3px !important;
+    top: -7px !important;
+    right: 0px !important;
+}
+.ContenPrecio.Oferta .OnlyPrecio>div>div{
+    width: 110% !important;
+    border-bottom-width: 0.8px !important;
+    border-bottom-style: solid !important;
+    position: absolute !important;
+    top: 6px !important;
+    left: -2px !important;
+}

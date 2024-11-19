@@ -1,0 +1,111 @@
+.headerDialogCotizacion i {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background-color: #116311;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerDialogCotizacion .Titulos>div:nth-child(1) {
+    color: #116311;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.headerDialogCotizacion .Titulos>div:nth-child(2) {
+    color: #3c4043;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    max-width: 400px;
+    line-height: 12px;
+}
+
+.PopUpCotizacion .Contedido>div:nth-child(1) {
+    color: #116311 !important;
+    font-size: 22px;
+    font-weight: 600;
+    width: 350px;
+}
+
+.PopUpCotizacion .Contedido>div:nth-child(2) {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 5px 0px 3px 0px;
+    border-bottom: 1px solid black;
+}
+.PopUpCotizacion .Contedido>div:nth-child(2) .EtiquetaOferta {
+    position: absolute;
+    width: auto;
+    left: calc(100% + 10px);
+    top: -10px;
+}
+.PopUpCotizacion .Contedido>div:nth-child(2) .EtiquetaOferta>div {
+    position: relative;
+}
+.PopUpCotizacion .Contedido>div:nth-child(2) .EtiquetaOferta>div i{
+    color: red;
+    font-size: 32px;
+}
+.PopUpCotizacion .Contedido>div:nth-child(2) .EtiquetaOferta>div>div{
+    color: white;
+    position: absolute;
+    font-size: 7px;
+}
+
+.PopUpCotizacion .Contedido>div.Etiquetas {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0px;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.PopUpCotizacion .Contedido>div.Propiedades {
+    padding: 5px 0px 10px 20px;
+    width: 100%;
+    font-size: 13px;
+    color: #000;
+}
+
+.PopUpCotizacion .Contedido>div.Propiedades>div {
+    position: relative;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.PopUpCotizacion .Contedido>div.Propiedades>div::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #323232;
+    position: absolute;
+    left: -15px;
+}
+
+.PopUpCotizacion .Contedido .BtnContacto {
+    border-radius: 10px;
+    background-color: #116311;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.PopUpCotizacion .Contedido .BtnContacto p {
+    margin: 0px;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+.PopUpCotizacion .Contedido .BtnContacto i {
+    font-size: 20px;
+}

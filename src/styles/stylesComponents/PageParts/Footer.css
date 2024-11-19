@@ -1,0 +1,60 @@
+.FooterFondo{
+    height: auto;
+    background-image: url('https://tileswale.com/uploads/products/163715629824_3455_935337.jpg');
+    position: relative;
+    z-index: 2;
+}
+.FooterFondo .FooterGeneral{
+    background-color: rgba(205, 50, 50, 0.223);
+    height: 180px;
+}
+.FooterFondo .FooterGeneral>div{
+    height: 100%;
+}
+.FooterFondo .FooterGeneral>div:nth-child(1) .ContenOPri{
+    width: 300px;
+    height: auto;
+    color: rgb(62, 61, 61);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+}
+.FooterFondo .FooterGeneral>div:nth-child(1) .TituOPri{
+    color: #8C1214;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+.FooterFondo .FooterGeneral .ContentOneFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+}
+.FooterFondo .FooterGeneral .ContentOneFooter .Titu{
+    color: #8C1214;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+.FooterFondo .FooterGeneral .ContentOneFooter .ContenF{
+    color: rgb(62, 61, 61);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    width: 220px;
+    text-decoration: none;
+}
+.FooterFondo .FooterGeneral .ContentOneFooter .ContenF i{
+    color: rgb(62, 61, 61);
+    font-size: 18px;
+    margin: auto 0px;
+}
+.FooterFondo .FooterGeneral>div:nth-child(2){
+    height: 100%;
+}
+.FooterFondo .FooterGeneral>div:nth-child(3) .ContentOneFooter{
+    height: 100%;
+}
+.FooterFondo .FooterGeneral>div:nth-child(3) .ContentOneFooter a{
+    margin-bottom: 10px;
+}

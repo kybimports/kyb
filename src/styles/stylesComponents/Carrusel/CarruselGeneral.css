@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.CarruselGeneral.Contenedor{
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+.CarruselGeneral.Contenedor>div{
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    left: 0px;
+    transition: 0.5s !important;
+}
+.ContenedorCarruselGeneral.buttons>button{
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 3px black;
+    background-color: transparent;
+    color: #ba1818;
+    font-size: 50px;
+    cursor: pointer;
+}
+.ContenedorCarruselGeneral.buttons>button.Btn01{
+    left: -25px;
+}
+.ContenedorCarruselGeneral.buttons>button.Btn02{
+    right: -25px;
+}

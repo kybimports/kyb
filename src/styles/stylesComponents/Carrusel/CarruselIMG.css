@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+.Carrusel.ContenedorBotones {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Carrusel.ContenedorBotones button {
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    z-index: 12;
+    background-color: black;
+    border: 0px solid transparent;
+}
+
+.Carrusel.ContenedorBotones button i {
+    color: white;
+    font-size: 12px;
+}
+
+.Carrusel.ContenedorBotones button:nth-child(1) {
+    top: -9px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.Carrusel.ContenedorBotones button:nth-child(2) {
+    bottom: -9px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.ContenedorCarrusel.CarruselIMG {
+    width: 130px;
+    height: 360px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 9;
+    transition: .5s;
+}
+
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border: 1px solid black;
+    transition: border 0.3s;
+}
+
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg img {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    object-fit: contain;
+    position: relative;
+    z-index: 6;
+    transition: 1s;
+}
+
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg {
+    position: relative;
+    border: 0px solid transparent;
+    overflow: hidden;
+}
+
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    background-image: repeating-conic-gradient(
+        #08ad08 0deg, 
+        #08ad08 90deg, 
+        transparent 90deg, 
+        transparent 180deg
+    );
+    z-index: 1;
+    animation: rotar 5s linear infinite;
+}
+.ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg::after {
+    content: '';
+    position: absolute;
+    width: 97%;
+    height: 96%;
+    background-color: white;
+    left: 1.5%;
+    top: 2%;
+    z-index: 2;
+}
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* HORIZONTAL */
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG {
+    height: 123.5px;
+    width: 370.5px;
+    align-items: center !important;
+    justify-content: start !important;
+}
+
+.Carrusel.ContenedorBotones.Horizontal button:nth-child(1) {
+    left: -21px !important;
+    transform: rotate(270deg);
+    top: 51px;
+}
+
+.Carrusel.ContenedorBotones.Horizontal button:nth-child(2) {
+    right: -21px !important;
+    transform: rotate(270deg);
+    top: 51px;
+}
+
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG {
+    flex-direction: row !important;
+    width: auto !important;
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: start !important;
+    left: 0px;
+}
+
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg {
+    width: 123.5px !important;
+    height: 100% !important;
+}
+
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg img {
+    position: relative;
+    width: 95% ;
+    height: 95% ;
+    top: 0% ;
+    left: 0% ;
+    object-fit: contain;
+    z-index: 6;
+}
+
+/* .Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg{
+    border: 6px solid #8C1214;
+    position: relative;
+    border-radius: 9px;
+} */
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg::after {
+    content: '';
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    background-color: white;
+    left: 1.5%;
+    top: 1.5%;
+    z-index: 2;
+}
+
+.Carrusel.ContenedorBotones.Horizontal .ContenedorCarrusel.CarruselIMG .ContenedorIMG .OneImg.SelectImg::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    background-image: repeating-conic-gradient(
+        red 0deg, 
+        red 90deg, 
+        transparent 90deg, 
+        transparent 180deg
+    );
+    z-index: 1;
+    animation: rotar 5s linear infinite;
+}

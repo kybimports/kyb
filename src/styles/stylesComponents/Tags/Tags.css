@@ -1,0 +1,10 @@
+.ContenedorTags.Mul{
+    padding: 4px 10px;
+    border-radius: 13px;
+    font-size: 9px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.ContenedorTags.Mul i{
+    font-size: 11px;
+}

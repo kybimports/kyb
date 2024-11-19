@@ -1,0 +1,185 @@
+:root {
+    ---var-Width-Filtros: 250px;
+}
+
+.PageCatalogo {
+    z-index: 2;
+    background-color: #1E2327;
+    height: auto;
+    min-height: 100vh;
+}
+
+
+
+
+
+/* FILTROS */
+.PageCatalogo .Filtros {
+    width: 0px;
+    height: auto;
+    position: fixed;
+    transition: 1s;
+    background-color: #555b61;
+    background-image:
+        radial-gradient(circle, #3c3c3c32 38%, transparent 0%),
+        radial-gradient(circle, #2423231c 25%, transparent 0%),
+        radial-gradient(circle, #464f4733 16%, transparent 0%),
+        radial-gradient(circle, #4646463e 5%, transparent 0%),
+        radial-gradient(circle, #1212120f 22%, transparent 0%),
+        radial-gradient(circle, #4646463e 19%, transparent 0%),
+        radial-gradient(circle, #1212121c 10%, transparent 0%),
+        radial-gradient(circle, #3131311c 6%, transparent 0%);
+    background-position:
+        50px -35px,
+        -35px -170px,
+        235px 25px,
+        -50px -83px,
+        175px -50px,
+        95px 100px,
+        -120px 110px,
+        20px 70px;
+    background-size: 300px 300px;
+    left: 24px;
+    z-index: 50;
+}
+
+.PageCatalogo .Filtros.ActivoFiltros {
+    width: var(---var-Width-Filtros) !important;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros {
+    overflow: hidden;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro {
+    border: 4px solid #055405;
+    width: 85%;
+    height: auto;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Titulo {
+    color: white;
+    font-size: 15px;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input input[type='text'] {
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    color: #116311;
+    font-size: 12px;
+    padding: 5px 15px;
+    border: 0px solid transparent;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Categorias>div {
+    max-height: 22px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    color: white;
+}
+
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Categorias .p-checkbox.p-component {
+    width: 20px;
+    height: 20px;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Categorias .p-checkbox.p-component .p-checkbox-box {
+    width: 20px;
+    height: 20px;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Categorias>div .p-checkbox.p-highlight .p-checkbox-box {
+    border-color: #116311;
+    background: #116311;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Categorias>div .p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
+    border-color: #116311;
+}
+
+
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input .Buscador i {
+    right: 10px;
+    color: #116311
+}
+
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input.Precio {
+    width: 100%;
+    height: 60px;
+    padding: 10px 0px;
+}
+
+
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input.Precio .p-slider .p-slider-range {
+    background: #116311;
+}
+
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input.Precio .p-slider .p-slider-handle {
+    border: 2px solid #116311;
+}
+
+.PageCatalogo .Filtros .ContenidoFiltros .OneFiltro .Input.Precio .p-slider:not(.p-disabled) .p-slider-handle:hover {
+    background: #1ca41c;
+}
+
+
+
+
+
+
+/* CONTENIDO */
+.PageCatalogo .Contenido {
+    height: min-content !important;
+    position: relative;
+    z-index: 18;
+    transition: 1s;
+}
+
+.PageCatalogo .Contenido.ActivoFiltros {
+    width: calc(100% - var(---var-Width-Filtros)) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOTON */
+.PageCatalogo .BtnActiveFiltro {
+    width: 35px;
+    height: 45px;
+    position: absolute;
+    z-index: 40;
+    right: -35px;
+    color: #1E2327;
+    font-size: 20px;
+    background-color: #555b61;
+    border: 0px solid transparent;
+    border-radius: 0px 50% 50% 0px;
+    transition: 1s;
+    overflow: hidden;
+}

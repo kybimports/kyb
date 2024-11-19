@@ -1,0 +1,101 @@
+.cardProducto03.Cont {
+    width: 200px;
+    height: 380px;
+    background-color: white;
+    border: 2px solid rgba(187, 179, 179, 0.533);
+    padding: 12px 9px;
+    border-radius: 7px;
+    position: relative;
+    padding: 8px;
+}
+.cardProducto03.Cont .ContenedorImg{
+    position: relative;
+    top: 0px;
+}
+.cardProducto03.Cont .ContenedorImg .Dedicacion{
+    padding: 15px 25px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 14px 22px rgba(0, 0, 0, 0.547);
+    position: relative;
+    top: -25px;
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    transition: 0.5s;
+}
+.cardProducto03.Cont img{
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    object-fit: cover;
+    position: relative;
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+    transition: 0.5s;
+}
+.cardProducto03.Cont .ContenedorDatosUsu{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+}
+.cardProducto03.Cont .Separador{
+    width: 80%;
+    height: 6px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.479);
+}
+.cardProducto03.Cont .ContenedorDatosUsu>div:nth-child(1){
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 15px;
+}
+.cardProducto03.Cont .ContenedorDatosUsu>div:nth-child(2){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -0.2px;
+    color: rgb(61, 61, 61);
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+}
+.cardProducto03.Cont .ContenedorEstrellas {
+    gap: 2px;
+}
+.cardProducto03.Cont .ContenedorExtra {
+    position: absolute;
+    font-size: 12px;
+    bottom: 12px;
+    right: 30px;
+    transition: 0.5s;
+}
+.cardProducto03.Cont:hover img{
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.45);
+    top: -20px;
+}
+.cardProducto03.Cont:hover .Dedicacion{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.45);
+    top: -10px;
+}
+.cardProducto03.Cont .ContenedorEstrellas i{
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.277);
+    font-size: 15px;
+    transition: 0.5s;
+}
+.cardProducto03.Cont:hover .ContenedorEstrellas i{
+    text-shadow: 0px 8px 5px rgba(0, 0, 0, 0.277);
+    font-size: 20px;
+}
+.cardProducto03.Cont:hover .ContenedorExtra{
+    font-size: 14px;
+    bottom: 8px;
+    right: 12px;
+}

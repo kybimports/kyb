@@ -1,0 +1,35 @@
+:root {
+    --color-NavBar: white;
+    --font-family-NavBar: 'Inter';
+    --font-size-NavBar: 17px
+}
+
+.ClassNavBar {
+    background-color: transparent;
+    z-index: 20;
+}
+
+.ClassNavBar .ContenedorNavBar {
+    height: 40px;
+    background-color: #3c434965;
+    border-radius: 20px 0px 0px 20px;
+    color: var(--color-NavBar);
+}
+
+.ClassNavBar .ContenedorNavBar .Welcome {
+    color: var(--color-NavBar);
+    font-size: var(--font-size-NavBar);
+}
+
+.ClassNavBar .ContenedorNavBar .SeccionIcon img {
+    height: 140%;
+    position: relative;
+    left: -5px;
+}
+
+.ClassNavBar .ContenedorNavBar .SeccionRutas a {
+    text-decoration: none;
+    color: var(--color-NavBar);
+    font-size: var(--font-size-NavBar);
+    cursor: pointer;
+}

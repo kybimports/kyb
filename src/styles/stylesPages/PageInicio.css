@@ -1,0 +1,92 @@
+.PageInicio {
+    z-index: 2;
+    background-color: #1E2327;
+}
+
+.PageInicio .Seccion01 {
+    overflow: hidden;
+    min-height: 360px;
+}
+
+
+.PageInicio .Seccion01 .ImgFondo {
+    width: 50%;
+    height: auto;
+    right: -29%;
+    top: -28%;
+    transition: 1s;
+}
+
+@media (max-height: 443px),
+(max-width: 779px) {
+    .PageInicio .Seccion01 .ImgFondo {
+        transform: scale(12);
+    }
+    .PageInicio .Seccion01 .Redes a div{
+        display: none;
+    }
+    .PageInicio .Seccion01 .Titulo>div:nth-child(1){
+        max-width: 60vw !important;
+    }
+    .PageInicio .Seccion01 .Titulo>div:nth-child(2){
+        max-width: 60vw !important;
+    }
+    .PageInicio .Seccion01 .Titulo>div:nth-child(3){
+        max-width: 67vw !important;
+    }
+}
+
+.PageInicio .Seccion01 .ImgFondo .Img01 {
+    width: 100%;
+    height: auto;
+}
+.PageInicio .Seccion01 .ImgFondo .Img02 {
+    width: 75%;
+    height: auto;
+    bottom: -30%;
+    left: -30%;
+}
+
+.PageInicio .Seccion01 .Redes {
+    background-color: #3C434980;
+    bottom: 10%;
+    right: 6%;
+}
+.PageInicio .Seccion01 .Redes a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+.PageInicio .Seccion01 .Redes a img{
+    width: 50px;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1px;
+}
+.PageInicio .Seccion01 .Redes a div{
+    width: 100%;
+}
+.PageInicio .Seccion01 .Titulo{
+    left: 6%;
+}
+.PageInicio .Seccion01 .Titulo>div{
+    font-family: "Itim", cursive;
+    font-size: 17px;
+    color: white;
+    font-weight: 0;
+    max-width: 32vw;
+    line-height: 17px;
+}
+.PageInicio .Seccion01 .Titulo>div:nth-child(1){
+    font-size: 30px;
+    font-weight: 1000;
+    margin-bottom: 4vh;
+    line-height: 30px;
+}
+.PageInicio .Seccion01 .Titulo>div:nth-child(2){
+    font-size: 22px;
+    max-width: 26vw;
+    margin-bottom: 5vh;
+    line-height: 20px;
+}

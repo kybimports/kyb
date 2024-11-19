@@ -1,0 +1,221 @@
+.ContenedorPageProductoA {
+    padding-top: 120px;
+}
+
+.ViewProducto div {
+    font-family: "Kufam", sans-serif;
+    color: black;
+}
+
+.ViewProducto .tituloDialog {
+    width: 100%;
+    font-size: 26px;
+    line-height: 23px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 5px;
+    text-align: start;
+}
+
+.ViewProducto .tituloDialog>div:nth-child(2) {
+    font-weight: 500;
+    font-size: 21px;
+    color: #cd5a5a;
+}
+
+.ViewProducto .PrecioDialog {
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.ViewProducto .CaracteristicasDialog {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0px;
+    max-width: 400px;
+    height: 200px;
+    max-height: 200px;
+    position: relative;
+    padding: 4px 0px;
+    overflow: auto;
+}
+
+.ViewProducto .CaracteristicasDialog>div {
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: 400;
+    color: #403f3f;
+    display: flex;
+    align-items: center;
+}
+
+.ViewProducto .CaracteristicasDialog>div::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #403f3f;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+}
+
+.ViewProducto .ServiciosExtraDialog .OneServicio {
+    width: 170px;
+    gap: 6px;
+}
+
+.ViewProducto .ServiciosExtraDialog .OneServicio i {
+    font-size: 26px;
+}
+
+.ViewProducto .ServiciosExtraDialog .OneServicio .Contenido>div {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+}
+
+.ViewProducto .ServiciosExtraDialog .OneServicio .Contenido .Titulo {
+    width: 100%;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.ViewProducto .ButtonDialog>span {
+    height: 40px;
+}
+
+.ViewProducto .ButtonDialog>span>button {
+    background-color: #ba1818;
+}
+
+.ViewProducto .ButtonDialog>span>input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ba1818;
+
+}
+
+.ViewProducto .ButtonDialog>button {
+    height: 40px;
+    background-color: #ba1818;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.ViewProducto .ButtonDialog>button>span:nth-child(1) {
+    font-size: 20px;
+}
+
+/* .ViewProducto .ButtonDialog button {
+    padding: 8px 15px;
+    gap: 4px;
+    background-color: #8C1214;
+} */
+
+.ContenedorPageProductoA .SeccionB {
+    font-family: "Kulim Park", sans-serif;
+}
+
+.ContenedorPageProductoA .SeccionB .TituloSecc {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.ContenedorPageProductoA .SeccionB .ContenidoSecc {
+    font-size: 13px;
+    width: 45%;
+    min-width: 200px;
+    color: #6A6868;
+}
+
+.ContenedorPageProductoA .SeccionC {
+    width: 85%;
+    min-width: 200px;
+    max-width: 1000px;
+    font-family: "Kulim Park", sans-serif;
+}
+
+.ContenedorPageProductoA .SeccionC .TituloSecc {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.ContenedorPageProductoA .SeccionC .ContenedorEspecificaciones {
+    gap: 1%
+}
+
+@media(max-width: 917px) {
+    .ContenedorPageProductoA .SeccionC {
+        width: 95%;
+    }
+}
+
+@media(max-width: 896px) {
+    .ContenedorPageProductoA .SeccionB .ContenidoSecc {
+        width: 65%;
+    }
+}
+
+@media(max-width: 658px) {
+    .ContenedorPageProductoA .SeccionC {
+        width: 75%;
+    }
+
+    .ContenedorPageProductoA .SeccionB .ContenidoSecc {
+        width: 75%;
+    }
+}
+
+
+/* MEDIA QUERY */
+@media(max-width: 1114px) {
+    .ViewProducto {
+        width: 35% !important;
+    }
+
+    .ViewProducto .CaracteristicasDialog {
+        width: 100% !important;
+        max-width: 400px;
+        min-height: none;
+        height: auto !important;
+    }
+
+    .ViewProducto .ServiciosExtraDialog {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 4% !important;
+    }
+
+    .ViewProducto .ServiciosExtraDialog .OneServicio {
+        width: 48%;
+        padding: 6px 0px;
+    }
+}
+
+@media(max-width: 798px) {
+    .SeccionA {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 25px;
+    }
+
+    .ViewProducto {
+        width: 70% !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media(max-width: 647px) {
+    .ViewProducto {
+        width: 80% !important;
+    }
+}
